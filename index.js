@@ -52,8 +52,7 @@ $(document).ready(function () {
       $("#score").html(currentPerson.score);
       $("#source").html(currentPerson.source);
       $("#age").html(currentPerson.age);
-
-      var education = currentPerson.education.length > 0
+      var education = currentPerson.education.length || !currenPerson.education > 0
          ? currentPerson.education
          : "N/A";
       $("#education").html(education);
