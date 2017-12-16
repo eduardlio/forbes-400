@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 
 <body>
     <div class="content main">
-        <div id="App">
+        <div id="card">
+           
+           <div class="general-wrapper">
+           <!-- includes person's name and score-->
+           <div class="header general">
             <div class="person deets">
                 <h1 id="person"></h1>
             </div>
+            <div class="score deets">
+                <h2>Score</h2>
+                <p id="score"></p>
+             </div>
+           </div>
+
+           <!-- other details -->
+           <div class="other general">
             <div class="worth deets">
                 <h2>Net Worth</h2>
                 <p id="worth"></p>
-            </div>
-            <div class="score deets">
-                <h2>score</h2>
-                <p id="score"></p>
-            </div>
+           </div>
             <div class="source deets">
                 <h2>Source of Wealth</h2>
                 <p id="source"></p>
@@ -34,22 +43,25 @@
                 <h2>Education</h2>
                 <p id="education"></p>
             </div>
-            <div class="desc deets">
-                <h2>Description</h2>
-                <p id="desc"></p>
-            </div>
-        </div>
-        <p id="random">
-            Show me some random rich person
-        </p>
-    </div>
-    <div class="about main">
+           </div>
+
+           <!-- details about the person -->
+               <div class="description general">
+                  <div class="desc deets">
+                      <h2>Description</h2>
+                      <p id="desc"></p>
+                  </div>
+               </div>
+           </div>     <p id="random">
+           Next Person
+              </p> 
+          </div>
+                    
+
+      </div>
 
     </div>
-    <footer class="footer">
-
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
 </body>
 

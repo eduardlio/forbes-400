@@ -21,12 +21,12 @@ $(document).ready(function () {
         $("#source").html(currentPerson.source);
         $("#age").html(currentPerson.age);
         var education = 
-        currentPerson.education.trim().length > 0
+        currentPerson.education.length > 0
         ? currentPerson.education
         : "N/A";
         $("#education").html(education);
         var description = 
-        currentPerson.description.trim().length > 0
+        currentPerson.description.length > 0
         ? currentPerson.description
         : "N/A";
         $("#desc").html(description);
