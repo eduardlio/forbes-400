@@ -26,7 +26,6 @@ $(document).ready(function () {
       index = index >= max 
          ? 0 
          : index+1;
-      logIndex();
       currentPerson = people[index];
       showPerson();
    }
@@ -34,7 +33,6 @@ $(document).ready(function () {
       index = index < 0 
          ? max-1 
          : index-1;
-      logIndex();
       currentPerson = people[index];
       showPerson();
    } 
@@ -42,7 +40,6 @@ $(document).ready(function () {
       var random = Math.floor(Math.random()*max);
       index = random;
       currentPerson = people[index];
-      logIndex();
       showPerson();
    }
    function showPerson(){
