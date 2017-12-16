@@ -33,7 +33,7 @@ $(document).ready(function () {
    function showPrevPerson(){
       index = index < 0 
          ? max-1 
-         : index+1;
+         : index-1;
       logIndex();
       currentPerson = people[index];
       showPerson();
